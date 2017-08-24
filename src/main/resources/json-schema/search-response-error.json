@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "id": "http://essential-data.sk/ress/ov/search-response-error.json",
+  "properties": {
+    "status": {
+      "id": "/properties/status",
+      "type": "string"
+    },
+    "message": {
+      "id": "/properties/message",
+      "type": "string"
+    },
+    "errors": {
+      "id": "/properties/errors",
+      "type": "array",
+      "anyOf": [
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "type": "object"
+}
